@@ -115,7 +115,7 @@ export function formatTimestamp(timestamp: number): string {
  * Validar nombre de aplicación
  */
 export function validateAppName(app: string): boolean {
-  return /^[a-zA-Z0-9\-_]+$/.test(app);
+  return /^[a-zA-Z0-9\-_\s.]+$/.test(app);
 }
 
 /**
